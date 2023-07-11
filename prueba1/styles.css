@@ -1,0 +1,119 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.countries-list {
+    flex-basis: 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.country {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.country:hover {
+    background-color: #0d8992;
+}
+
+.country-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.country-details {
+    flex-basis: 65%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.country-details h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.country-details p {
+    margin-bottom: 10px;
+}
+
+.clear-button {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 1rem 1.75rem;
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-image 0.3s ease;
+    margin-left: 46%;
+}
+
+.clear-button:hover {
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
+/* diseño responsive */
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .countries-list {
+        flex-basis: 100%;
+    }
+
+    .country-details {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+}
